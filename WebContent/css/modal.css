@@ -1,0 +1,140 @@
+.modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.modalAparece {
+    z-index: 3;
+    display: block;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+
+.modalRanking {
+    padding-top: 60px;
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.modal-button {
+    border: none;
+    padding: 8px 16px;
+    background-color: inherit;
+    cursor:pointer;
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    font-size: 40px;
+    color:rgb(252, 252, 252);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(5, 88, 5);
+    text-shadow: 3px 3px 5px rgb(54, 54, 54);
+    outline: none;
+}
+
+.modal-button:hover {
+    color: white;
+    text-shadow: gray;
+    font-size: 44px;
+    animation:fontPiscando linear;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: darkgray;
+    margin-top: -4px;
+}
+
+/*
+.modal-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}*/
+
+.modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+@media (max-width:600px) {
+    .modal-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .modal-modal {
+        padding-top: 30px
+    }
+}
+
+@media (max-width:768px) {
+    .modal-modal-content {
+        width: 500px
+    }
+
+    .modal-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .modal-modal-content {
+        width: 900px
+    }
+}
+
+.modal-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+.modal-display-topright {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.096);
+    height: 45px;
+    padding: 0px 0px 5px 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*
+.modal-container {
+    padding: 0.01em 16px
+}
+/*
+.modal-container:after,
+.modal-container:before {
+    content: "";
+    display: table;
+    clear: both
+}*/
+
